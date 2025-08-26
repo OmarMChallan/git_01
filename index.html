@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Web Radio</title>
+	<link rel="icon" href="favicon.ico" />
+	<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+	<header class="app-header">
+		<h1>Web Radio</h1>
+		<div class="header-actions">
+			<button id="themeToggle" aria-label="Toggle theme">🌓</button>
+		</div>
+	</header>
+
+	<main class="app-main">
+		<section class="controls" aria-label="Playback controls">
+			<div class="control-row">
+				<button id="playPauseBtn" class="primary" aria-label="Play/Pause">▶️</button>
+				<button id="stopBtn" aria-label="Stop">⏹️</button>
+				<button id="muteBtn" aria-label="Mute">🔇</button>
+				<input id="volume" type="range" min="0" max="1" step="0.01" value="1" aria-label="Volume" />
+			</div>
+			<div class="now-playing" aria-live="polite">
+				<span id="nowStation">No station</span>
+			</div>
+		</section>
+
+		<section class="search" aria-label="Search stations">
+			<input id="searchInput" type="search" placeholder="Search stations..." aria-label="Search stations" />
+		</section>
+
+		<section class="content">
+			<div class="stations">
+				<h2>Stations</h2>
+				<ul id="stationsList" class="list"></ul>
+			</div>
+			<div class="favorites">
+				<h2>Favorites</h2>
+				<ul id="favoritesList" class="list"></ul>
+			</div>
+		</section>
+	</main>
+
+	<footer class="app-footer">
+		<small>Built with ❤️ — Keyboard: Space=Play/Pause, M=Mute, +/-=Volume, ←/→=Prev/Next</small>
+	</footer>
+
+	<audio id="audio" crossorigin="anonymous"></audio>
+	<script src="app.js" defer></script>
+</body>
+</html>

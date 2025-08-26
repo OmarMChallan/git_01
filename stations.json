@@ -1,0 +1,37 @@
+[
+	{
+		"id": "bbc6",
+		"name": "BBC Radio 6 Music",
+		"genre": "Alternative/Indie",
+		"country": "UK",
+		"stream": "https://stream.live.vc.bbcmedia.co.uk/bbc_6music"
+	},
+	{
+		"id": "kexp",
+		"name": "KEXP 90.3 FM",
+		"genre": "Alternative/Indie",
+		"country": "USA",
+		"stream": "https://kexp-mp3-128.streamguys1.com/kexp128.mp3"
+	},
+	{
+		"id": "npr",
+		"name": "NPR",
+		"genre": "News/Talk",
+		"country": "USA",
+		"stream": "https://npr-ice.streamguys1.com/live.mp3"
+	},
+	{
+		"id": "lofi",
+		"name": "Lofi Girl",
+		"genre": "Lo-fi/Beats",
+		"country": "Internet",
+		"stream": "https://stream-mixtape-geo.ntslive.net/mixtape4"
+	},
+	{
+		"id": "jazz24",
+		"name": "Jazz24",
+		"genre": "Jazz",
+		"country": "USA",
+		"stream": "https://jazz24.streamguys1.com/jazz24-96.mp3"
+	}
+]
